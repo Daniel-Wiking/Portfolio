@@ -1,9 +1,9 @@
 :root {
 --color_main:rgb(137,177,137);
---color_detail:rgb(77,77,77);
---color_focus:rgb(77,77,77);
+--color_detail:rgb(137,220,137);
+--color_focus:rgb(17,7,37);
 --color_:rgb(77,77,77);
---padd1:20px 15px 10px 15px;
+--padd1:10px 10px 10px 10px;
 
 }
 
@@ -13,17 +13,60 @@
     padding:0;
 }
 
+body {
+    background-color:var(--color_main);
+    font-family: 'Special Elite', sans-serif;
+    color:var(--color_focus)
+}
 header  {
-font-family: 'Special Elite', sans-serif;
-background-color: var(--color_main);
-text-align:left;
+    background-color:var(--color_detail);
+    gap:1em;
+    padding:var(--padd1); 
+text-align:center;
 box-shadow: 0px 3px 15px black;
 
 }
-header h1, header p {
-    padding:var(--padd1);  
-   
-}
 
+main h2 {
+    padding:var(--padd1);
+    text-align: center;
+    width:100%;
+   margin:0.5em 0 0.5em 0;
+    font-weight: bolder;
+    font-size: 2em;
+    background-color:var(--color_detail);
+    box-shadow: 0px 3px 15px black;
+}
+#projects {
+    display:flex;
+    overflow:hidden;
+    flex-wrap: wrap;
+    
+    gap:10px;
+    text-align: center;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+
+}
+.project {
+    min-width: fit-content;
+    background-color: var(--color_detail);
+    max-width: 40%;
+    min-width:20%;
+    border-radius:0.5em;
+    margin:var(--padd1);
+    box-shadow: 0px 3px 15px black;
+
+}
+.project {
+    list-style-type:none;
+    padding:var(--padd1)
+    
+}
+ a {
+    text-decoration: none;
+    color:var(--color_focus)
+}
 
 
